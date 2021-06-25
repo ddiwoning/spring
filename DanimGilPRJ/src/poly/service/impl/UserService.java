@@ -6,7 +6,7 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
-//import poly.dto.KakaoDTO;
+import poly.dto.KakaoDTO;
 import poly.dto.UserDTO;
 import poly.persistance.mapper.IUserMapper;
 import poly.service.IUserService;
@@ -23,11 +23,11 @@ public class UserService implements IUserService{
 		return userMapper.getLoginInfo(uDTO);
 	}
 
-	/*
-	 * @Override public KakaoDTO kakaoLoginForDgService(KakaoDTO pDTO) {
-	 * 
-	 * return userMapper.kakaoLoginForDgService(pDTO); }
-	 */
+	
+	  @Override public KakaoDTO kakaoLoginForDgService(KakaoDTO pDTO) {
+	  
+	  return userMapper.kakaoLoginForDgService(pDTO); }
+	 
 
 	@Override
 	public int regUserInfo(UserDTO uDTO) {

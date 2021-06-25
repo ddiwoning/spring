@@ -33,5 +33,6 @@
 	</div>
 	<div class="astyle">
 		<a href="/kakaoLoginProc.do" > <img src="/resources/image/kakao_login_medium_narrow.png"></a>
+		<button type="button" onclick="location.href='/user/regUserInfo.do'">회원가입</button>
 	</div>
 </body>

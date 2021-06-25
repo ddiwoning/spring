@@ -15,7 +15,7 @@
 		ID=#{id} AND PWD=#{pwd}
 </select>
 
-<!-- <select id="kakaoLoginForDgService" resultType="KakaoDTO">
+<select id="kakaoLoginForDgService" resultType="KakaoDTO">
 	SELECT  
 		ID, 
 		PWD, 
@@ -23,8 +23,8 @@
 	FROM 
 		USER_INFO
 	WHERE 
-		ID=#{kakaoMeail}
-</select> -->
+		ID=#{kakaoMail}
+</select>
 
 <insert id="regUserInfo" parameterType="UserDTO">
 	INSERT 

@@ -12,10 +12,11 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import poly.dto.UserDTO;
-// import poly.service.IKakaoService;
+import poly.service.IKakaoService;
 import poly.service.IUserService;
-// import poly.service.impl.kakaoService;
+import poly.service.impl.kakaoService;
 import poly.util.CmmUtil;
+
 
 /*
  * 예외처리를 컨트롤러로 모아서 처리하는 방식을 많이 사용한다고 한다.
@@ -156,7 +157,8 @@ public class UserController {
 		return "/user/regUserInfo";
 	}
 	
-	// 로그인 처리를 하는 처리 기능
+	
+	// 회원가입 처리를 하는 처리 기능
 	@SuppressWarnings({ "unused", "null" })
 	@RequestMapping(value="user/regUserInfoProc")
 	public String regUserInfoProc(HttpServletRequest request, ModelMap model, HttpSession session) throws Exception{
@@ -193,10 +195,10 @@ public class UserController {
 		String url = "";
 		
 		if(res == 0) {
-			msg = "로그인 실패";
+			msg = "회원가입에 실패하였습니다";
 			url = "/";
 		} else {
-			msg = "로그인 성공";
+			msg = "회원가입에 성공했습니다!";
 			url = "/main/index.do";
 			/*
 			 * session.setAttribute("id", pDTO.getId()); session.setAttribute("name",
