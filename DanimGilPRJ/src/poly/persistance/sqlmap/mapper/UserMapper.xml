@@ -15,4 +15,26 @@
 		ID=#{id} AND PWD=#{pwd}
 </select>
 
+<!-- <select id="kakaoLoginForDgService" resultType="KakaoDTO">
+	SELECT  
+		ID, 
+		PWD, 
+		NAME 
+	FROM 
+		USER_INFO
+	WHERE 
+		ID=#{kakaoMeail}
+</select> -->
+
+<insert id="regUserInfo" parameterType="UserDTO">
+	INSERT 
+	       INTO USER_INFO
+	VALUES(
+		#{no}, 
+		#{id}, 
+		#{pwd}, 
+		#{name}
+	)
+</insert>
+
 </mapper>
