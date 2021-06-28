@@ -15,9 +15,7 @@
 		<org.aspectj-version>1.6.10</org.aspectj-version>
 		<slf4j.version>1.7.25</slf4j.version>
 		<log4j.version>2.11.0</log4j.version>
-
 	</properties>
-
 	<!-- 오라클에서 메이븐 저장소에 제공을 하고 있지 않기 때문에, 메이븐 사설 저장소 사용함 -->
 	<repositories>
 		<repository>
@@ -27,8 +25,6 @@
 		</repository>
 	</repositories>
 	
-
-
 	<dependencies>
 	
 	
@@ -43,14 +39,12 @@
 			<artifactId>httpclient</artifactId>
 			<version>4.3.5</version>
 		</dependency>
-
 	<!-- IOUtils 이미지 처리-->
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
 			<version>1.4</version>
 		</dependency>
-
 	<!-- 파일 업로드2 -->
 	<!-- https://mvnrepository.com/artifact/commons-fileupload/commons-fileupload -->
 	<dependency>
@@ -58,6 +52,7 @@
 		<artifactId>commons-fileupload</artifactId>
 		<version>1.2.1</version>
 	</dependency>
+	
 
 			<!-- mongoDB  -->
 		<dependency>
@@ -123,7 +118,6 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
-
 		<!-- ajax -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
@@ -131,7 +125,6 @@
 			<version>2.10.3</version>
 		</dependency>
 		
-
 		<!-- logging -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -158,7 +151,6 @@
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
-
 		<!-- Spring core -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -172,21 +164,18 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-
 		<!-- Spring Web ( Servlet / Anotation ) -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
-
 		<!-- Spring MVC -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
-
 		<!-- AspectJ -->
 		<dependency>
 			<groupId>org.aspectj</groupId>
@@ -198,9 +187,6 @@
 			<artifactId>aspectjrt</artifactId>
 			<version>1.6.8</version>
 		</dependency>
-
-
-
 		<!-- MyBatis, DBCP -->
 		<dependency>
 			<groupId>org.mybatis</groupId>
@@ -222,7 +208,6 @@
 			<artifactId>commons-dbcp</artifactId>
 			<version>1.4</version>
 		</dependency>
-
 		<!-- Oracle -->
 		<dependency>
 			<groupId>com.oracle</groupId>
@@ -243,7 +228,6 @@
 			<artifactId>c3p0</artifactId>
 			<version>0.9.5.2</version>
 		</dependency>
-
 		<dependency>
 			<groupId>commons-fileupload</groupId>
 			<artifactId>commons-fileupload</artifactId>
@@ -256,7 +240,6 @@
 			<version>1.2</version>
 		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -268,7 +251,6 @@
 					<webXml>WebContent/WEB-INF/web.xml</webXml>
 				</configuration>
 			</plugin>
-
 			<plugin>
 				<artifactId>maven-eclipse-plugin</artifactId>
 				<version>2.9</version>
