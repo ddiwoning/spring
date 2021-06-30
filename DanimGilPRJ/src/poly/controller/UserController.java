@@ -199,7 +199,7 @@ public class UserController {
 			url = "/";
 		} else {
 			msg = "회원가입에 성공했습니다!";
-			url = "/main/index.do";
+			url = "/main/index";
 			/*
 			 * session.setAttribute("id", pDTO.getId()); session.setAttribute("name",
 			 * pDTO.getName());

@@ -121,22 +121,19 @@ img{
     <link rel="stylesheet" type="text/css" href="./style.css">
   </head>
   <body width="100%" height="100%">
-    <form action="index.html" method="post" class="loginForm">
+    <form action="/user/userLoginProc.do" method="post" class="loginForm">
      <img src="/resources/image/Log.png" width="200px">
+     <h4> 소경서 </h4>
       <div class="idForm">
-        <input type="text" class="id" placeholder="ID">
+        <input type="text" class="id" placeholder="ID" name = "id">
       </div>
       <div class="passForm">
-        <input type="password" class="pw" placeholder="PW">
+        <input type="password" class="pw" placeholder="PW" name = "pwd">
       </div>
-      <button type="button" class="btn" onclick="button()">
+      <button type="submit" class="btn" >
         LOG IN
       </button>
-      <script>
-         let button = () => {
-           alert('login Button !')
-        }
-      </script>
+
       <div class="bottomText">
          <div>
             <a href="/kakaoLoginProc.do"> <img src="/resources/image/kakao_login.png" class="btn"></a>
